@@ -2,20 +2,6 @@ Face Recognition Project
 
 This project implements a face recognition pipeline using the InsightFace w600k_r50.onnx model. It allows capturing images, encoding faces, training a classifier, and recognizing faces in real time. The system supports single-person datasets, auto/manual capture, and logs all activities.
 
-🗂️ Project Structure
-face_recognition2/
-│
-├─ capture.py          # Capture images from webcam for a person
-├─ encode.py           # Encode images into embeddings and compute mean embeddings
-├─ train.py            # Train classifier on embeddings
-├─ recognize.py        # Real-time face recognition
-├─ logger.py           # Logging setup (console + file)
-├─ dataset/            # Folder to store captured images per person
-├─ outputs/
-│   ├─ encodings/      # Pickle files for embeddings and mean embeddings
-│   └─ classifier/     # Pickle file for trained classifier
-├─ logs/               # Log files
-└─ requirements.txt  
 
 
 ⚡ Features
