@@ -27,7 +27,9 @@ Packages (install via pip install -r requirements.txt)
 
 
 🖥️ Setup & Usage
+
 1️⃣ Capture Faces
+
 python capture.py --name Alice --count 20 --auto --interval 0.5
 
 
@@ -40,8 +42,8 @@ python capture.py --name Alice --count 20 --auto --interval 0.5
 --interval → Seconds between captures
 
 2️⃣ Encode Faces
-python encode.py
 
+python encode.py
 
 Reads all images in dataset/
 
@@ -50,8 +52,8 @@ Detects faces using InsightFace ONNX model (w600k_r50.onnx)
 Saves embeddings and mean embeddings to outputs/encodings/
 
 3️⃣ Train Classifier
-python train.py
 
+python train.py
 
 Loads embeddings from outputs/encodings/
 
@@ -60,8 +62,8 @@ Trains a KNN classifier on the embeddings
 Saves trained classifier to outputs/classifier/classifier.pkl
 
 4️⃣ Recognize Faces
-python recognize.py
 
+python recognize.py
 
 Opens webcam and detects faces in real time
 
